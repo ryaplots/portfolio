@@ -1,0 +1,343 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.welcomeimg {
+    background-image: url("marian-kroell-0eriTFRzDdg-unsplash.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+    position: relative;
+    box-shadow: inset 0px -36px 63px -28px rgba(0, 0, 0, 0.75);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: transparent;
+    font-family: 'Quicksand', sans-serif;
+    z-index: -1;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    animation: fadein 1.5s ease-in both;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #eedcc0;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px black;
+}
+
+@media screen and (max-width:1068px) {
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+    }
+}
+
+.name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #eedcc0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 2em;
+    text-shadow: 2px 2px 2px black;
+}
+
+.name h1 {
+    animation: fadein 1.5s ease-in both;
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.name h2 {
+    font-size: 14px;
+    line-height: 2.5em;
+    animation: 2s slide-down;
+}
+
+@keyframes slide-down {
+    from {
+        margin-top: -30%;
+        height: 30%;
+        opacity: 0;
+    }
+    to {
+        margin-top: 0%;
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+.about {
+    height: 100vh;
+    background-color: #103748;
+    position: relative;
+}
+
+.presentation {
+    position: absolute;
+    color: #eedcc0;
+    top: 40%;
+    left: 50%;
+    transform: translate(-20%, -60%);
+    text-align: right;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    line-height: 3em;
+}
+
+.presentation h1,
+h3 {
+    animation: fadeEffect 3s;
+}
+
+@keyframes fadeEffect {
+    /* from 0 to full opacity */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.presentation p {
+    color: rgb(158, 157, 157);
+    line-height: 2em;
+}
+
+.presentation h5 {
+    color: grey;
+    text-transform: none;
+}
+
+.presentation a {
+    color: rgb(158, 157, 157);
+}
+
+.presentation a:hover {
+    color: white;
+}
+
+.description {
+    position: absolute;
+    color: #eedcc0;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    line-height: 3em;
+    font-size: 16px;
+    border: ridge;
+}
+
+@media screen and (max-width: 660px) {
+    .about {
+        height: 140vh;
+    }
+    .presentation {
+        font-size: 0.8em;
+        top: 40%;
+        left: 50%;
+        transform: translate(-20%, -60%);
+    }
+    .description {
+        font-size: 0.8em;
+    }
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 30vh;
+    padding: 0 2rem;
+    background-color: #103748;
+    font-family: 'Raleway', sans-serif;
+    color: #D2D0BA;
+}
+
+.projects>h1 {
+    font-size: 6rem;
+}
+
+@media (max-width: 28.75em) {
+    .projects>h1 {
+        font-size: 4rem;
+    }
+}
+
+.github {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.giticon {
+    font-size: 4em;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+    color: white;
+}
+
+.giticon:hover {
+    transform: translateY(8px);
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 50vh;
+    padding: 0 2rem;
+    background-color: #103748;
+    font-family: 'Raleway', sans-serif;
+    color: #D2D0BA;
+}
+
+.contacts h1 {
+    font-size: 1.3rem;
+}
+
+.contacticons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    padding: 2px;
+}
+
+.contact-details {
+    font-size: 1rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.contact-details:hover {
+    transform: translateY(8px);
+}
+
+footer {
+    background-image: url("marian-kroell-0eriTFRzDdg-unsplash.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    vertical-align: bottom;
+}
+
+footer a {
+    color: whitesmoke;
+}
+
+@media (max-width: 28.75em) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+button {
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    z-index: 2;
+    font-size: 30px;
+    color: wheat;
+}
+
+.presentation anim-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 24em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
