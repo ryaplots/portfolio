@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Darya Plotnytska</title>
+    <link rel="stylesheet" type="text/css" href="aboutstyle.css">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link href="https://fonts.googleapis.com/css2?family=Cousine&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="manifest" href="site.webmanifest">
+    <script src="https://kit.fontawesome.com/2b58ae3f9a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <section id="welcome" class="welcome">
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="contacts.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1>About me</h1>
+        <a href="#about"><i class="fas fa-chevron-down fa-2x" style="color: #282828;"></i></a>
+    </section>
+    <div id="about" class="about">
+        <img src="_DSC0055 (1).jpeg" alt="Portrait">
+        <p>I am a Web Developer from Portugal who loves the challenge of designing websites and developping web applications.<br> <br> During my Bachelor course I studied multimedia, which taught me HTML, CSS and Adobe Creative Cloud applications, also Website
+            quality and Marketing, more specifically Digital Marketing. <br> <br> I took several courses that gave me practical knowledge of the field, including CS50 Introduction to Computer Science and Resposive Web Design on FreeCodeCamp. <br> <br>I
+            always seek simplicity in conveying a message. My designs are heavily nature-inspired and are usually quite symmetric and harmonic. <br> <br> Feel free to check out my CV for more specific information:
+            <a href="WebCV_Darya_Plotnytska.pdf" download><i class="fas fa-download fa-lg" style="color: #282828;"></i></a>
+            <br> <br> <strong>SKILLS:
+            HTML | CSS | BOOTSTRAP | WORDPRESS| JAVASCRIPT | C | SQL | SEO | ANALYTICS</strong>
+        </p>
+    </div>
+</body>
+
+</html>
