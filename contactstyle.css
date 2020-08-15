@@ -20,54 +20,50 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    min-height: 35vh;
+    background-image: url("abigail-lynn-B7-i8YAFigM-unsplash.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
     font-family: var(--title);
     color: #7c7671;
     font-size: 150px;
-    line-height: 2em;
+    line-height: 3em;
     text-shadow: 1px 1px 1px black;
     animation: fadein 2s ease-in both;
 }
 
-.about {
-    max-width: 100vw;
-    display: flex;
-    align-items: flex-start;
-    justify-content: start;
-    flex-direction: row;
-    padding: 2em 6em 6em 6em;
-    background-color: #fdfdfd;
-}
-
-img {
-    width: 35vw;
-}
-
 p {
-    display: relative;
-    padding: 3em 0 0 5em;
-    font-size: 15px;
-    letter-spacing: 1px;
-    line-height: 1.5em;
-    text-align: left;
+    color: #282828;
     font-family: var(--text);
-    color: #7c7671;
+    font-size: 22px;
+    animation: 2s slide-down;
+    line-height: 3em;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 a {
     font-family: var(--text);
-    color: #7c7671;
+    font-size: 22px;
+    line-height: 2em;
+    color: #282828;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
+a:visited {
+    color: #7c7671;
+}
+
 .menu-wrap {
-    top: 1%;
+    top: 2%;
     left: 46.3vw;
     position: absolute;
     z-index: 1;
@@ -219,10 +215,6 @@ a:hover {
     transition: color 0.0s ease;
 }
 
-.download {
-    position: relative;
-}
-
 @-webkit-keyframes fadein {
     0% {
         opacity: 0;
@@ -258,4 +250,42 @@ a:hover {
         height: 100%;
         opacity: 1;
     }
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
