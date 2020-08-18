@@ -16,14 +16,15 @@
 
 a {
     color: #7c7671;
+    text-decoration: underline;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:visited {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .welcome {
@@ -256,7 +257,7 @@ img:hover {
         min-height: 10vh;
     }
     p {
-        font-size: 30px;
+        font-size: 2rem;
     }
 }
 
