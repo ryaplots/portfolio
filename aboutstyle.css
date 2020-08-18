@@ -66,6 +66,35 @@ a:hover {
     text-decoration: underline;
 }
 
+@media (max-width: 980px) {
+    .welcome {
+        min-height: 10vh;
+        justify-content: center;
+    }
+    .about {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3em 3em 1em 0;
+    }
+    img {
+        width: 500px;
+    }
+}
+
+@media (width: 1024px) {
+    .welcome {
+        min-height: 10vh;
+    }
+    .about {
+        padding: 3em 3em 1em 2em;
+    }
+    p {
+        font-size: 25px;
+        padding: 2em 0 0 2em;
+    }
+}
+
 .menu-wrap {
     top: 1%;
     left: 46.3vw;
@@ -257,5 +286,22 @@ a:hover {
         margin-top: 0%;
         height: 100%;
         opacity: 1;
+    }
+}
+
+@media (max-width: 980px) {
+    .menu-wrap {
+        left: 46%;
+    }
+    .menu-wrap .hamburger {
+        width: 90px;
+        height: 90px;
+    }
+    .menu-wrap .hamburger>div::before,
+    .menu-wrap .hamburger>div::after {
+        height: 5px;
+    }
+    .menu-wrap .hamburger>div {
+        height: 5px;
     }
 }
