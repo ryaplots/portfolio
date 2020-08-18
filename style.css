@@ -49,8 +49,32 @@ p {
     letter-spacing: 2px;
 }
 
-.more {
+h5 {
     font-size: 12px;
+    font-family: var(--text);
+}
+
+@media (max-width: 980px) {
+    h1 {
+        font-size: 270px;
+        line-height: 2.7em;
+    }
+    p {
+        font-size: 2.5rem;
+        padding: 3rem;
+        text-align: center;
+        line-height: 3em;
+    }
+    h5 {
+        font-size: 2rem;
+    }
+}
+
+@media (width: 1024px) {
+    h1 {
+        font-size: 270px;
+        line-height: 2.7em;
+    }
 }
 
 @-webkit-keyframes fadein {
@@ -241,4 +265,27 @@ p {
     color: inherit;
     text-decoration: none;
     transition: color 0.0s ease;
+}
+
+@media (max-width: 980px) {
+    .menu-wrap {
+        left: 46%;
+    }
+    .menu-wrap .hamburger {
+        width: 90px;
+        height: 90px;
+    }
+    .menu-wrap .hamburger>div::before,
+    .menu-wrap .hamburger>div::after {
+        height: 5px;
+    }
+    .menu-wrap .hamburger>div {
+        height: 5px;
+    }
+}
+
+@media (width: 1024px) {
+    .menu-wrap {
+        left: 46.5%;
+    }
 }
