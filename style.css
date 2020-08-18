@@ -282,6 +282,9 @@ h5 {
     .menu-wrap .hamburger>div {
         height: 5px;
     }
+    .menu-wrap .menu>div>div>ul>li {
+        font-size: 4rem;
+    }
 }
 
 @media (width: 1024px) {
