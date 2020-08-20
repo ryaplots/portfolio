@@ -27,7 +27,7 @@ var languages = {
         text: "Привет"
     },
     'uk': {
-        text: "Вітаю!"
+        text: "Вітаю"
     }
 }
 
