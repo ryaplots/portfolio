@@ -26,7 +26,7 @@ var languages = {
     'ru': {
         text: "Привет"
     },
-    'ua': {
+    'uk': {
         text: "Вітаю!"
     }
 }
