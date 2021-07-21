@@ -15,7 +15,7 @@
 }
 
 .welcomeimg {
-    background-image: url("abigail-lynn-B7-i8YAFigM-unsplash.jpg");
+    background-image: url("media/abigail-lynn-B7-i8YAFigM-unsplash.jpg");
     min-height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -32,11 +32,11 @@
 }
 
 h1 {
-    color: #7c7671;
+    color: #fff;
     font-family: var(--title);
     font-size: 220px;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
     animation: fadein 1.5s ease-in both;
 }
 

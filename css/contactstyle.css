@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    background-image: url("abigail-lynn-B7-i8YAFigM-unsplash.jpg");
+    background-image: url("../media/abigail-lynn-B7-i8YAFigM-unsplash.jpg");
     min-height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -30,20 +30,21 @@
 
 h1 {
     font-family: var(--title);
-    color: #7c7671;
+    color: #fff;
     font-size: 150px;
     line-height: 3em;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
     animation: fadein 2s ease-in both;
 }
 
 p {
-    color: #282828;
+    color: #fff;
     font-family: var(--text);
     font-size: 22px;
     animation: 2s slide-down;
     line-height: 3em;
     letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
     text-align: center;
 }
 
@@ -51,7 +52,7 @@ a {
     font-family: var(--text);
     font-size: 22px;
     line-height: 2em;
-    color: #282828;
+    color: #fff;
 }
 
 a:hover {
@@ -59,7 +60,7 @@ a:hover {
 }
 
 a:visited {
-    color: #7c7671;
+    color: #fff;
 }
 
 @media (max-width: 980px) {

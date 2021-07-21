@@ -38,16 +38,15 @@ a:visited {
 
 h1 {
     font-family: var(--title);
-    color: #7c7671;
-    font-size: 150px;
+    color: #ffd39d;
+    font-size: 130px;
     line-height: 2em;
     text-shadow: 1px 1px 1px black;
     animation: fadein 2s ease-in both;
 }
 
 p {
-    display: relative;
-    padding: 3em 0 0 5em;
+    padding: 10px 45px 30px;
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 1.2em;
@@ -214,29 +213,21 @@ p {
 }
 
 .container {
-    margin: 2rem;
+    margin: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     background-color: #fdfdfd;
 }
 
 .cell {
     color: white;
     text-align: center;
-    padding: 2rem 2rem 2rem 2rem;
-}
-
-.cell-1,
-.cell-3,
-.cell-5,
-.cell-7 {
-    border-right: 0.5px solid #7c7671;
+    padding: 10px;
 }
 
 img {
-    width: 500px;
-    height: 333px;
+    width: 80%;
+    height: auto;
     box-shadow: 0.5px 1px 3px black;
 }
 
